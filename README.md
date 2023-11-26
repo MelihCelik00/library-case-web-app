@@ -1,6 +1,4 @@
-# Project Name
-
-This is a web application for managing the members and the borrowing of books by the members for a library.
+# Library-case-web-app
 
 ## Table of Contents
 
@@ -12,7 +10,7 @@ This is a web application for managing the members and the borrowing of books by
 
 ## Introduction
 
-Provide an overview of your project and its purpose. Explain what problem it solves or what it aims to achieve.
+This is a web application for managing the members and the borrowing of books by the members for a library.
 
 ## Technologies
 
