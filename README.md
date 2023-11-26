@@ -7,7 +7,6 @@ This is a web application for managing the members and the borrowing of books by
 - [Introduction](#introduction)
 - [Technologies](#technologies)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Testing](#testing)
 - [Acknowledgement](#acknowledgement)
 
@@ -101,7 +100,7 @@ After migration is completed, our local env setup is completed too. Now, we can 
 npm run local
 ```
 
-After seeing, this response in your terminal you can test APIs:
+After seeing this response in your terminal, you can test APIs:
 ```log
 npm run local
 
@@ -115,11 +114,10 @@ npm run local
 [nodemon] starting `node -r dotenv/config ./bin/www`
 ```
 
-## Usage
-To test manually, you can view Postman documentation in your browser:
-`localhost:3000/documentation`
-
 ## Testing
+To test manually, you can view Postman documentation in your browser:
+`http://localhost:3000/documentation/`
+
 I also tried to add mini sample integration test so you can also test it with:
 `npm run test`. But, for your information this part is not finished so it's likely to get errors :/
 
