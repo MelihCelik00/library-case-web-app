@@ -18,8 +18,6 @@ const getAllUsers = async (req, res, next) => {
 
 const getUserById = async (req, res, next) => {
   try {
-    console.log('tost');
-
     if (!req.params.id) {
       return res.status(404).json({message: 'No id at req.param!'});
     };
@@ -136,7 +134,6 @@ const borrowBook = async (req, res, next) => {
       returning: true,
       plain: true,
     });
-    console.log(borrow);
 
     if (!borrow || !borrow.length && !borrow.dataValues) {
       await BookBorrowings.create({
