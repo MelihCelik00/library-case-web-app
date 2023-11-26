@@ -3,12 +3,14 @@ const express = require('express');
 const urlencoded = require('express').urlencoded;
 const logger = require('morgan');
 const app = express();
+const docs = require('./routes/swagger.route');
 
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(urlencoded({extended: false}));
 
+app.use('/documentation', docs.serve, docs.setup);
 app.use('/', require('./routes/api.route'));
 
 app.use('/', (req, res) => {
